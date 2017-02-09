@@ -20,8 +20,9 @@ from toscaparser.entity_template import EntityTemplate
 SECTIONS = (DESCRIPTION, EVENT, SCHEDULE, TARGET_FILTER, CONDITION, ACTION) = \
            ('description', 'event_type', 'schedule',
             'target_filter', 'condition', 'action')
-CONDITION_KEYNAMES = (CONTRAINT, PERIOD, EVALUATIONS, METHOD) = \
-                     ('constraint', 'period', 'evaluations', 'method')
+CONDITION_KEYNAMES = (CONTRAINT, PERIOD, EVALUATIONS, METHOD, THRESHOLD, COMPARISON_OPERATOR) = \
+                     ('constraint', 'period', 'evaluations', 'method',
+                      'threshold', 'comparison_operator')
 log = logging.getLogger('tosca')
 
 
